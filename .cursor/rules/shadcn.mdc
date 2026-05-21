@@ -1,0 +1,25 @@
+---
+alwaysApply: true
+---
+# UI Building Rules
+
+ALWAYS use shadcn/ui components for ANY UI work. Never write custom buttons, inputs, cards, dialogs, dropdowns, tabs, or any other primitive from scratch.
+
+# Workflow
+
+1. Before building any UI, call the shadcn MCP to see what components are available
+2. If a needed component isn't installed in `components/ui/`, install it via the MCP
+3. Compose pages and features from shadcn components — do not reinvent primitives
+4. For pre-built sections (auth pages, dashboards, settings), check shadcn blocks first via the MCP
+
+# Styling
+
+- Tailwind utility classes only
+- Use shadcn's CSS variables for colors (e.g., `bg-background`, `text-foreground`, `text-muted-foreground`) — never hardcode colors
+- Use `lucide-react` for all icons
+- Follow shadcn composition patterns (Card → CardHeader/CardContent/CardFooter, Form → FormField/FormItem/FormLabel/FormControl)
+
+# Forms
+
+- Always use `react-hook-form` with `zod` for validation
+- Use shadcn's Form components, not raw inputs
