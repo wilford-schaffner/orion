@@ -1,21 +1,16 @@
-# Next.js template
+# Orion
 
-This is a Next.js template with shadcn/ui.
+Orion is a student study-group coordination app. It helps you find peers working on the same assignments, browse campus study events, and share when you're free to meet.
 
-## Adding components
+## What you can do
 
-To add components to your app, run the following command:
+- **Browse assignments** — See what's due soon and tap into any assignment to find study groups already working on it.
+- **Join study groups** — Each assignment lists groups you can join, with a sense of who's already in them.
+- **Set your availability** — Pick dates and times you're free to study so groups can coordinate around your schedule.
+- **Track progress** — Mark assignments complete as you finish them.
+- **Explore campus events** — Featured study sessions and official campus events on the home page.
+- **Browse by style** — Filter the vibe you're looking for—exam prep, quiet study, collaborative work, homework help, and more.
 
-```bash
-npx shadcn@latest add button
-```
+## How it works
 
-This will place the ui components in the `components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
-```
+From the home page, pick an assignment to see its details and nearby study groups. Before joining, you can set when you're available to meet. Your availability and completion status stay on your device for now—the app uses sample data while the full experience is being built out.
